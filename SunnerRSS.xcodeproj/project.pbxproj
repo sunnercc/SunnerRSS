@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		137C78EE205B99EC00907337 /* SCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 137C78ED205B99EC00907337 /* SCParser.m */; };
+		137C78F1205B9A0200907337 /* SCAuthorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 137C78F0205B9A0200907337 /* SCAuthorModel.m */; };
+		137C78F4205B9A0E00907337 /* SCFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 137C78F3205B9A0E00907337 /* SCFeedModel.m */; };
+		137C78F7205B9A1E00907337 /* SCEntryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 137C78F6205B9A1E00907337 /* SCEntryModel.m */; };
 		40EBBDC7205AB7A5007B8212 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EBBDC6205AB7A5007B8212 /* AppDelegate.m */; };
 		40EBBDCA205AB7A5007B8212 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EBBDC9205AB7A5007B8212 /* ViewController.m */; };
 		40EBBDCD205AB7A5007B8212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EBBDCB205AB7A5007B8212 /* Main.storyboard */; };
@@ -35,6 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		137C78EB205B99A300907337 /* SCRSSParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCRSSParser.h; sourceTree = "<group>"; };
+		137C78EC205B99EC00907337 /* SCParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCParser.h; sourceTree = "<group>"; };
+		137C78ED205B99EC00907337 /* SCParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCParser.m; sourceTree = "<group>"; };
+		137C78EF205B9A0200907337 /* SCAuthorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCAuthorModel.h; sourceTree = "<group>"; };
+		137C78F0205B9A0200907337 /* SCAuthorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCAuthorModel.m; sourceTree = "<group>"; };
+		137C78F2205B9A0E00907337 /* SCFeedModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFeedModel.h; sourceTree = "<group>"; };
+		137C78F3205B9A0E00907337 /* SCFeedModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCFeedModel.m; sourceTree = "<group>"; };
+		137C78F5205B9A1E00907337 /* SCEntryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCEntryModel.h; sourceTree = "<group>"; };
+		137C78F6205B9A1E00907337 /* SCEntryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCEntryModel.m; sourceTree = "<group>"; };
+		137C78FA205BA13900907337 /* SCRSSParserDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCRSSParserDefines.h; sourceTree = "<group>"; };
 		40EBBDC2205AB7A5007B8212 /* SunnerRSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunnerRSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40EBBDC5205AB7A5007B8212 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		40EBBDC6205AB7A5007B8212 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -78,6 +92,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		137C78D7205B999200907337 /* SCRSSParser */ = {
+			isa = PBXGroup;
+			children = (
+				137C78EB205B99A300907337 /* SCRSSParser.h */,
+				137C78EC205B99EC00907337 /* SCParser.h */,
+				137C78ED205B99EC00907337 /* SCParser.m */,
+				137C78EF205B9A0200907337 /* SCAuthorModel.h */,
+				137C78F0205B9A0200907337 /* SCAuthorModel.m */,
+				137C78F2205B9A0E00907337 /* SCFeedModel.h */,
+				137C78F3205B9A0E00907337 /* SCFeedModel.m */,
+				137C78F5205B9A1E00907337 /* SCEntryModel.h */,
+				137C78F6205B9A1E00907337 /* SCEntryModel.m */,
+				137C78FA205BA13900907337 /* SCRSSParserDefines.h */,
+			);
+			path = SCRSSParser;
+			sourceTree = "<group>";
+		};
 		40EBBDB9205AB7A5007B8212 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +132,7 @@
 		40EBBDC4205AB7A5007B8212 /* SunnerRSS */ = {
 			isa = PBXGroup;
 			children = (
+				137C78D7205B999200907337 /* SCRSSParser */,
 				40EBBDC5205AB7A5007B8212 /* AppDelegate.h */,
 				40EBBDC6205AB7A5007B8212 /* AppDelegate.m */,
 				40EBBDC8205AB7A5007B8212 /* ViewController.h */,
@@ -265,8 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				137C78EE205B99EC00907337 /* SCParser.m in Sources */,
+				137C78F4205B9A0E00907337 /* SCFeedModel.m in Sources */,
 				40EBBDCA205AB7A5007B8212 /* ViewController.m in Sources */,
 				40EBBDD5205AB7A5007B8212 /* main.m in Sources */,
+				137C78F1205B9A0200907337 /* SCAuthorModel.m in Sources */,
+				137C78F7205B9A1E00907337 /* SCEntryModel.m in Sources */,
 				40EBBDC7205AB7A5007B8212 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
