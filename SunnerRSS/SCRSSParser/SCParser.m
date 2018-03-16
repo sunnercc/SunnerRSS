@@ -68,8 +68,9 @@ typedef NS_ENUM(NSUInteger, ParentElementType) {
 - (void)parserDidEndDocument:(NSXMLParser *)parser
 {
     SCLog(@"%s", __func__);
-    
-    self.completionHandler(_currentFeed, nil);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.completionHandler(_currentFeed, nil);
+    });
 }
 // sent when the parser has completed parsing. If this is encountered, the parse was successful.
 
@@ -227,7 +228,9 @@ typedef NS_ENUM(NSUInteger, ParentElementType) {
 {
     SCLog(@"%s", __func__);
     
-    self.completionHandler(nil, validationError);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.completionHandler(nil, validationError);
+    });
 }
 // If validation is on, this will report a fatal validation error to the delegate. The parser will stop parsing.
 

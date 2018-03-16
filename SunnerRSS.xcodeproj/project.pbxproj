@@ -11,12 +11,20 @@
 		137C78F1205B9A0200907337 /* SCAuthorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 137C78F0205B9A0200907337 /* SCAuthorModel.m */; };
 		137C78F4205B9A0E00907337 /* SCFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 137C78F3205B9A0E00907337 /* SCFeedModel.m */; };
 		137C78F7205B9A1E00907337 /* SCEntryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 137C78F6205B9A1E00907337 /* SCEntryModel.m */; };
+		40C56593205BFAFA0031C989 /* AddRssSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C56586205BFAFA0031C989 /* AddRssSourceViewController.m */; };
+		40C56594205BFAFA0031C989 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C56588205BFAFA0031C989 /* DetailViewController.m */; };
+		40C56595205BFAFA0031C989 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C56589205BFAFA0031C989 /* MainViewController.m */; };
+		40C56596205BFAFA0031C989 /* RssSourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C5658A205BFAFA0031C989 /* RssSourceModel.m */; };
+		40C56597205BFAFA0031C989 /* EntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40C5658B205BFAFA0031C989 /* EntryViewController.xib */; };
+		40C56598205BFAFA0031C989 /* AddRssSourceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40C5658D205BFAFA0031C989 /* AddRssSourceViewController.xib */; };
+		40C56599205BFAFA0031C989 /* EntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C5658E205BFAFA0031C989 /* EntryViewController.m */; };
+		40C5659A205BFAFA0031C989 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40C5658F205BFAFA0031C989 /* DetailViewController.xib */; };
+		40C565B7205BFB590031C989 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40C565B0205BFB590031C989 /* Assets.xcassets */; };
+		40C565B8205BFB590031C989 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C565B1205BFB590031C989 /* LaunchScreen.storyboard */; };
+		40C565B9205BFB590031C989 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40C565B3205BFB590031C989 /* Main.storyboard */; };
+		40C565BA205BFB590031C989 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40C565B5205BFB590031C989 /* main.m */; };
+		40C565BB205BFB590031C989 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40C565B6205BFB590031C989 /* Info.plist */; };
 		40EBBDC7205AB7A5007B8212 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EBBDC6205AB7A5007B8212 /* AppDelegate.m */; };
-		40EBBDCA205AB7A5007B8212 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EBBDC9205AB7A5007B8212 /* ViewController.m */; };
-		40EBBDCD205AB7A5007B8212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EBBDCB205AB7A5007B8212 /* Main.storyboard */; };
-		40EBBDCF205AB7A5007B8212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40EBBDCE205AB7A5007B8212 /* Assets.xcassets */; };
-		40EBBDD2205AB7A5007B8212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40EBBDD0205AB7A5007B8212 /* LaunchScreen.storyboard */; };
-		40EBBDD5205AB7A5007B8212 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EBBDD4205AB7A5007B8212 /* main.m */; };
 		40EBBDDF205AB7A5007B8212 /* SunnerRSSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EBBDDE205AB7A5007B8212 /* SunnerRSSTests.m */; };
 		40EBBDEA205AB7A5007B8212 /* SunnerRSSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40EBBDE9205AB7A5007B8212 /* SunnerRSSUITests.m */; };
 /* End PBXBuildFile section */
@@ -49,16 +57,27 @@
 		137C78F5205B9A1E00907337 /* SCEntryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCEntryModel.h; sourceTree = "<group>"; };
 		137C78F6205B9A1E00907337 /* SCEntryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCEntryModel.m; sourceTree = "<group>"; };
 		137C78FA205BA13900907337 /* SCRSSParserDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCRSSParserDefines.h; sourceTree = "<group>"; };
+		40C56586205BFAFA0031C989 /* AddRssSourceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRssSourceViewController.m; sourceTree = "<group>"; };
+		40C56587205BFAFA0031C989 /* EntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryViewController.h; sourceTree = "<group>"; };
+		40C56588205BFAFA0031C989 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		40C56589205BFAFA0031C989 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		40C5658A205BFAFA0031C989 /* RssSourceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RssSourceModel.m; sourceTree = "<group>"; };
+		40C5658B205BFAFA0031C989 /* EntryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EntryViewController.xib; sourceTree = "<group>"; };
+		40C5658C205BFAFA0031C989 /* AddRssSourceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRssSourceViewController.h; sourceTree = "<group>"; };
+		40C5658D205BFAFA0031C989 /* AddRssSourceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddRssSourceViewController.xib; sourceTree = "<group>"; };
+		40C5658E205BFAFA0031C989 /* EntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryViewController.m; sourceTree = "<group>"; };
+		40C5658F205BFAFA0031C989 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		40C56590205BFAFA0031C989 /* RssSourceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RssSourceModel.h; sourceTree = "<group>"; };
+		40C56591205BFAFA0031C989 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		40C56592205BFAFA0031C989 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		40C565B0205BFB590031C989 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40C565B2205BFB590031C989 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		40C565B4205BFB590031C989 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40C565B5205BFB590031C989 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		40C565B6205BFB590031C989 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40EBBDC2205AB7A5007B8212 /* SunnerRSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunnerRSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40EBBDC5205AB7A5007B8212 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		40EBBDC6205AB7A5007B8212 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		40EBBDC8205AB7A5007B8212 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		40EBBDC9205AB7A5007B8212 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		40EBBDCC205AB7A5007B8212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		40EBBDCE205AB7A5007B8212 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		40EBBDD1205AB7A5007B8212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		40EBBDD3205AB7A5007B8212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		40EBBDD4205AB7A5007B8212 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		40EBBDDA205AB7A5007B8212 /* SunnerRSSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunnerRSSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40EBBDDE205AB7A5007B8212 /* SunnerRSSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SunnerRSSTests.m; sourceTree = "<group>"; };
 		40EBBDE0205AB7A5007B8212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,6 +128,38 @@
 			path = SCRSSParser;
 			sourceTree = "<group>";
 		};
+		40C56585205BFAFA0031C989 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				40C5658C205BFAFA0031C989 /* AddRssSourceViewController.h */,
+				40C56586205BFAFA0031C989 /* AddRssSourceViewController.m */,
+				40C5658D205BFAFA0031C989 /* AddRssSourceViewController.xib */,
+				40C56587205BFAFA0031C989 /* EntryViewController.h */,
+				40C5658E205BFAFA0031C989 /* EntryViewController.m */,
+				40C5658B205BFAFA0031C989 /* EntryViewController.xib */,
+				40C56591205BFAFA0031C989 /* DetailViewController.h */,
+				40C56588205BFAFA0031C989 /* DetailViewController.m */,
+				40C5658F205BFAFA0031C989 /* DetailViewController.xib */,
+				40C56592205BFAFA0031C989 /* MainViewController.h */,
+				40C56589205BFAFA0031C989 /* MainViewController.m */,
+				40C565B3205BFB590031C989 /* Main.storyboard */,
+				40C5658A205BFAFA0031C989 /* RssSourceModel.m */,
+				40C56590205BFAFA0031C989 /* RssSourceModel.h */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		40C565AF205BFB590031C989 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				40C565B0205BFB590031C989 /* Assets.xcassets */,
+				40C565B1205BFB590031C989 /* LaunchScreen.storyboard */,
+				40C565B5205BFB590031C989 /* main.m */,
+				40C565B6205BFB590031C989 /* Info.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		40EBBDB9205AB7A5007B8212 = {
 			isa = PBXGroup;
 			children = (
@@ -133,15 +184,10 @@
 			isa = PBXGroup;
 			children = (
 				137C78D7205B999200907337 /* SCRSSParser */,
+				40C56585205BFAFA0031C989 /* Sections */,
+				40C565AF205BFB590031C989 /* Resource */,
 				40EBBDC5205AB7A5007B8212 /* AppDelegate.h */,
 				40EBBDC6205AB7A5007B8212 /* AppDelegate.m */,
-				40EBBDC8205AB7A5007B8212 /* ViewController.h */,
-				40EBBDC9205AB7A5007B8212 /* ViewController.m */,
-				40EBBDCB205AB7A5007B8212 /* Main.storyboard */,
-				40EBBDCE205AB7A5007B8212 /* Assets.xcassets */,
-				40EBBDD0205AB7A5007B8212 /* LaunchScreen.storyboard */,
-				40EBBDD3205AB7A5007B8212 /* Info.plist */,
-				40EBBDD4205AB7A5007B8212 /* main.m */,
 			);
 			path = SunnerRSS;
 			sourceTree = "<group>";
@@ -270,9 +316,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40EBBDD2205AB7A5007B8212 /* LaunchScreen.storyboard in Resources */,
-				40EBBDCF205AB7A5007B8212 /* Assets.xcassets in Resources */,
-				40EBBDCD205AB7A5007B8212 /* Main.storyboard in Resources */,
+				40C56598205BFAFA0031C989 /* AddRssSourceViewController.xib in Resources */,
+				40C565BB205BFB590031C989 /* Info.plist in Resources */,
+				40C5659A205BFAFA0031C989 /* DetailViewController.xib in Resources */,
+				40C565B9205BFB590031C989 /* Main.storyboard in Resources */,
+				40C565B8205BFB590031C989 /* LaunchScreen.storyboard in Resources */,
+				40C565B7205BFB590031C989 /* Assets.xcassets in Resources */,
+				40C56597205BFAFA0031C989 /* EntryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,13 +347,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C56593205BFAFA0031C989 /* AddRssSourceViewController.m in Sources */,
 				137C78EE205B99EC00907337 /* SCParser.m in Sources */,
+				40C56595205BFAFA0031C989 /* MainViewController.m in Sources */,
 				137C78F4205B9A0E00907337 /* SCFeedModel.m in Sources */,
-				40EBBDCA205AB7A5007B8212 /* ViewController.m in Sources */,
-				40EBBDD5205AB7A5007B8212 /* main.m in Sources */,
 				137C78F1205B9A0200907337 /* SCAuthorModel.m in Sources */,
 				137C78F7205B9A1E00907337 /* SCEntryModel.m in Sources */,
+				40C56596205BFAFA0031C989 /* RssSourceModel.m in Sources */,
+				40C56599205BFAFA0031C989 /* EntryViewController.m in Sources */,
 				40EBBDC7205AB7A5007B8212 /* AppDelegate.m in Sources */,
+				40C565BA205BFB590031C989 /* main.m in Sources */,
+				40C56594205BFAFA0031C989 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,20 +393,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		40EBBDCB205AB7A5007B8212 /* Main.storyboard */ = {
+		40C565B1205BFB590031C989 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				40EBBDCC205AB7A5007B8212 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		40EBBDD0205AB7A5007B8212 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				40EBBDD1205AB7A5007B8212 /* Base */,
+				40C565B2205BFB590031C989 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		40C565B3205BFB590031C989 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40C565B4205BFB590031C989 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -467,7 +521,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SunnerRSS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SunnerRSS/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sunner.SunnerRSS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -480,7 +535,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SunnerRSS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SunnerRSS/Resource/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = sunner.SunnerRSS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
