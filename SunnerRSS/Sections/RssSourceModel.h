@@ -16,8 +16,8 @@
 
 @property (nonatomic, copy) NSString *link;
 
-- (RssSourceModel *)readFromSandBox;
+- (instancetype)initWithDict:(NSDictionary *)dict;
 
-- (void)saveToSandBox;
+- (NSDictionary *)dict;
 
 @end

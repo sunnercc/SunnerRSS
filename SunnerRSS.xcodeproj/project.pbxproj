@@ -143,8 +143,8 @@
 				40C56592205BFAFA0031C989 /* MainViewController.h */,
 				40C56589205BFAFA0031C989 /* MainViewController.m */,
 				40C565B3205BFB590031C989 /* Main.storyboard */,
-				40C5658A205BFAFA0031C989 /* RssSourceModel.m */,
 				40C56590205BFAFA0031C989 /* RssSourceModel.h */,
+				40C5658A205BFAFA0031C989 /* RssSourceModel.m */,
 			);
 			path = Sections;
 			sourceTree = "<group>";

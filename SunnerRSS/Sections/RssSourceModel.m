@@ -8,41 +8,29 @@
 
 #import "RssSourceModel.h"
 
-#define FileName ([NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"RssSource.data"])
-
-
-@interface RssSourceModel() <NSCoding>
+@interface RssSourceModel()
 
 @end
 
 @implementation RssSourceModel
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder
+- (instancetype)initWithDict:(NSDictionary *)dict
 {
     if (self = [super init]) {
-        self.name = [aDecoder decodeObjectForKey:@"name"];
-        self.desc = [aDecoder decodeObjectForKey:@"desc"];
-        self.link = [aDecoder decodeObjectForKey:@"link"];
+        self.name = [[dict valueForKey:@"name"] copy];
+        self.desc = [[dict valueForKey:@"desc"] copy];
+        self.link = [[dict valueForKey:@"link"] copy];
     }
     return self;
 }
 
-- (void)encodeWithCoder:(NSCoder *)aCoder
+- (NSDictionary *)dict
 {
-    [aCoder encodeObject:self.name forKey:@"name"];
-    [aCoder encodeObject:self.desc forKey:@"desc"];
-    [aCoder encodeObject:self.link forKey:@"link"];
-}
-
-
-- (RssSourceModel *)readFromSandBox
-{
-    return [NSKeyedUnarchiver unarchiveObjectWithFile:FileName];
-}
-
-- (void)saveToSandBox
-{
-    [NSKeyedArchiver archiveRootObject:self toFile:FileName];
+    NSMutableDictionary *mDict = [NSMutableDictionary dictionary];
+    [mDict setValue:self.name forKey:@"name"];
+    [mDict setValue:self.desc forKey:@"desc"];
+    [mDict setValue:self.link forKey:@"link"];
+    return [mDict copy];
 }
 
 @end

@@ -11,6 +11,8 @@
 #import "AddRssSourceViewController.h"
 #import "EntryViewController.h"
 
+#define FILENAME [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"rssSources.plist"]
+
 @interface MainViewController () <NSXMLParserDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -21,6 +23,19 @@
 
 @implementation MainViewController
 
+- (NSMutableArray *)rssSourceList
+{
+    if (_rssSourceList == nil) {
+        _rssSourceList = [NSMutableArray array];
+        NSMutableArray *rsList = [[NSMutableArray alloc] initWithContentsOfFile:FILENAME];
+        for (NSDictionary *dict in rsList) {
+            RssSourceModel *rsModel = [[RssSourceModel alloc] initWithDict:dict];
+            [_rssSourceList addObject:rsModel];
+        }
+    }
+    return _rssSourceList;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -30,7 +45,7 @@
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"add" style:UIBarButtonItemStyleDone target:self action:@selector(addRssSource)];
     self.navigationItem.rightBarButtonItem = rightItem;
     
-    self.rssSourceList = [NSMutableArray array];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationResignActiveNoti:) name:UIApplicationWillResignActiveNotification object:nil];
 }
 
 - (void)addRssSource
@@ -41,6 +56,16 @@
         [self.tableView reloadData];
     }];
     [self.navigationController pushViewController:arsVc animated:YES];
+}
+
+- (void)applicationResignActiveNoti:(NSNotification *)noti
+{
+    NSMutableArray *mArray = [NSMutableArray array];
+    for (RssSourceModel *rsModel in self.rssSourceList) {
+        NSDictionary *dict = [rsModel dict];
+        [mArray addObject:dict];
+    }
+    [mArray writeToFile:FILENAME atomically:YES];
 }
 
 #pragma mark - dataSource
@@ -71,6 +96,11 @@
     EntryViewController *entryVc = [[EntryViewController alloc] initWithNibName:NSStringFromClass([EntryViewController class]) bundle:nil];
     entryVc.rssPath = rsModel.link;
     [self.navigationController pushViewController:entryVc animated:YES];
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 
